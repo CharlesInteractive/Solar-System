@@ -11,17 +11,17 @@
 	<script src="Components/Aframe-Template-Component.js"></script>
 	<script src="Components/Aframe-Assets-Component.js"></script>
 	<!-- Custom Compononents -->
-    <script src="Components/main.js"></script>
+    <!-- <script src="Components/main.js"></script> -->
 </head>
 <body>
 	<a-scene vr-mode-ui="enabled: false" id="aframe-main">
 		<!-- Leave assets empty, everything is loaded through the assets component. -->
 		<a-assets></a-assets>
 		<!-- Template Container -->
-		<a-entity id="template-container" template="src: scenes/select-res-hall.html" data-back="" position="0 0 0"></a-entity>
+		<a-entity id="template-container" template="src:Scenes/Solar-System.html" position="0 0 0"></a-entity>
 		<!-- Camera -->
-        <a-entity id="camerawrapper" position="0 0 0">
-          <a-camera id="cameracontroller" position="0 0 0" rotation="0 0 0" wasd-controls-enabled="false"></a-camera>
+        <a-entity id="camerawrapper" position="-0.896 0 2.134">
+          <a-camera id="cameracontroller" position="0 0 0" rotation="0 0 0"></a-camera>
         </a-entity>
         <!-- Light Source-->
 		<a-entity light="color:#BBB;type:ambient"></a-entity>
