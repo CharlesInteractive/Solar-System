@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Le Solar System</title>
+	<meta name="description" content="Le Solar System">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Latest Aframe Release -->
+	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<!-- Imported Components -->
+	<script src="Components/Aframe-Template-Component.js"></script>
+	<script src="Components/Aframe-Assets-Component.js"></script>
+	<!-- Custom Compononents -->
+    <script src="Components/main.js"></script>
+</head>
+<body>
+	<a-scene vr-mode-ui="enabled: false" id="aframe-main">
+		<!-- Leave assets empty, everything is loaded through the assets component. -->
+		<a-assets></a-assets>
+		<!-- Template Container -->
+		<a-entity id="template-container" template="src: scenes/select-res-hall.html" data-back="" position="0 0 0"></a-entity>
+		<!-- Camera -->
+        <a-entity id="camerawrapper" position="0 0 0">
+          <a-camera id="cameracontroller" position="0 0 0" rotation="0 0 0" wasd-controls-enabled="false"></a-camera>
+        </a-entity>
+        <!-- Light Source-->
+		<a-entity light="color:#BBB;type:ambient"></a-entity>
+        <a-entity light="intensity:0.35;type:ambient" position="0 1 1"></a-entity>
+        <!-- Mouse Cursor -->
+		<a-entity cursor="rayOrigin: mouse;"></a-entity>
+	</a-scene>
+</body>
+</html>
