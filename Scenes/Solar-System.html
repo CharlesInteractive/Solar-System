@@ -1,26 +1,161 @@
 <a-sky	asset-on-demand="src:Textures/2k_stars_milky_way.jpg">
 </a-sky>
-<a-sphere asset-on-demand="src:Textures/2k_sun.jpg">
+<a-sphere asset-on-demand="src:Textures/2k_sun.jpg"
+			radius="1.5">
 	<a-animation attribute="rotation"
-               dur="100000"
-               easing="linear"
-               to="0 360 0"
-               repeat="indefinite"></a-animation>
+               	 dur="100000"
+               	 easing="linear"
+               	 to="0 360 0"
+               	 repeat="indefinite"></a-animation>
 </a-sphere>
 
-<a-entity>
-	<a-sphere 	asset-on-demand="src:Textures/2k_mercury.jpg"
-				radius="0.00350297659"
-				position="5 0 0">
+<a-entity id="mercury"
+			rotation="0 0 0">
+	<a-sphere asset-on-demand="src:Textures/2k_mercury.jpg"
+			  radius="0.15"
+			  position="3 0 0">
 		<a-animation attribute="rotation"
-	               dur="100000"
-	               easing="linear"
-	               to="0 360 0"
-	               repeat="indefinite"></a-animation>
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
 	</a-sphere>
 	<a-animation attribute="rotation"
-	               dur="100000"
-	               easing="linear"
-	               to="0 360 0"
-	               repeat="indefinite"></a-animation>
+	             dur="60000"
+	             easing="linear"
+	             to="0 360 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="venus"
+			rotation="0 45 0">
+	<a-sphere asset-on-demand="src:Textures/2k_venus_atmosphere.jpg"
+			  radius="0.25"
+			  position="5.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+	</a-sphere>
+	<a-animation attribute="rotation"
+	             dur="60000"
+	             easing="linear"
+	             to="0 405 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="earth"
+			rotation="0 225 0">
+	<a-sphere asset-on-demand="src:Textures/2k_earth_daymap.jpg"
+			  radius="0.25"
+			  position="7.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+	</a-sphere>
+	<a-animation attribute="rotation"
+	             dur="70000"
+	             easing="linear"
+	             to="0 585 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="mars"
+			rotation="0 90 0">
+	<a-sphere asset-on-demand="src:Textures/2k_mars.jpg"
+			  radius="0.25"
+			  position="9.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+	</a-sphere>
+	<a-animation attribute="rotation"
+	             dur="70000"
+	             easing="linear"
+	             to="0 450 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="jupiter"
+			rotation="0 270 0">
+	<a-sphere asset-on-demand="src:Textures/2k_jupiter.jpg"
+			  radius="0.5"
+			  position="11.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+	</a-sphere>
+	<a-animation attribute="rotation"
+	             dur="80000"
+	             easing="linear"
+	             to="0 630 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="saturn"
+			rotation="0 135 0">
+	<a-sphere asset-on-demand="src:Textures/2k_saturn.jpg"
+			  radius="0.425"
+			  position="13.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+
+	</a-sphere>
+	<a-ring asset-on-demand="src:Textures/2k_saturn_ring_alpha.png" radius-inner=".75" radius-outer="1.25" position="13.25 .01 0" rotation="90 90 0" repeat="10 10 10"></a-ring>
+	<a-ring asset-on-demand="src:Textures/2k_saturn_ring_alpha.png" radius-inner=".75" radius-outer="1.25" position="13.25 -.01 0" rotation="-90 90 0" repeat="10 10 10"></a-ring>
+	<a-animation attribute="rotation"
+	             dur="80000"
+	             easing="linear"
+	             to="0 495 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="uranus"
+			rotation="0 315 0">
+	<a-sphere asset-on-demand="src:Textures/2k_uranus.jpg"
+			  radius="0.35"
+			  position="15.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+
+	</a-sphere>
+	<a-ring color="teal" radius-inner=".65" radius-outer=".655" position="15.25 .01 0" rotation="0 180 0" repeat="10 10 10"></a-ring>
+	<a-ring color="teal" radius-inner=".65" radius-outer=".655" position="15.25 -.01 0" rotation="0 0 0" repeat="10 10 10"></a-ring>
+	<a-animation attribute="rotation"
+	             dur="90000"
+	             easing="linear"
+	             to="0 675 0"
+	             repeat="indefinite"></a-animation>
+</a-entity>
+
+<a-entity id="neptune"
+			rotation="0 180 0">
+	<a-sphere asset-on-demand="src:Textures/2k_neptune.jpg"
+			  radius="0.35"
+			  position="17.25 0 0">
+		<a-animation attribute="rotation"
+	               	 dur="10000"
+	               	 easing="linear"
+	               	 to="0 360 0"
+	               	 repeat="indefinite"></a-animation>
+
+	</a-sphere>
+	<a-animation attribute="rotation"
+	             dur="90000"
+	             easing="linear"
+	             to="0 540 0"
+	             repeat="indefinite"></a-animation>
 </a-entity>
