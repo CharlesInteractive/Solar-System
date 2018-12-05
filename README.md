@@ -1,2 +1,2 @@
 # Solar-System
-VR solar system build with Aframe.
+VR solar system built with Aframe.
