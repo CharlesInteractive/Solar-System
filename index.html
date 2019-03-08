@@ -6,11 +6,10 @@
 	<meta name="description" content="Le Solar System">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <!-- Latest Aframe Release -->
-	<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
 	<!-- Imported Components -->
 	<script src="Components/Aframe-Template-Component.js"></script>
-	<script src="Components/Aframe-Assets-Component.js"></script>
-	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v4.1.1/dist/aframe-extras.min.js"></script>
+	<script src="Components/Aframe-Extras.js"></script>
 	<!-- Custom Compononents -->
     <!-- <script src="Components/main.js"></script> -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -22,9 +21,21 @@
 	<meta name="theme-color" content="#ffffff">
 </head>
 <body>
-	<a-scene vr-mode-ui="enabled: false" id="aframe-main">
-		<!-- Leave assets empty, everything is loaded through the assets component. -->
-		<a-assets></a-assets>
+	<a-scene stats vr-mode-ui="enabled: false" id="aframe-main">
+		<a-assets>
+			<img id="texture-milky-way" src="Textures\2k_stars_milky_way.jpg" alt="milky way texture">
+			<img id="texture-sun" src="Textures\2k_sun.jpg" alt="sun texture">
+			<img id="texture-mercury" src="Textures\2k_mercury.jpg" alt="murcury texture">
+			<img id="texture-venus" src="Textures\2k_venus_atmosphere.jpg" alt="venus texture">
+			<img id="texture-earth" src="Textures\2k_earth_daymap.jpg" alt="earth texture">
+			<img id="texture-moon" src="Textures\2k_moon.jpg" alt="moon texture">
+			<img id="texture-mars" src="Textures\2k_mars.jpg" alt="mars texture">
+			<img id="texture-jupiter" src="Textures\2k_jupiter.jpg" alt="jupiter texture">
+			<img id="texture-saturn" src="Textures\2k_saturn.jpg" alt="saturn texture">
+			<img id="texture-saturn-rings" src="Textures\2k_saturn_ring_alpha.png" alt="saturn texture">
+			<img id="texture-uranus" src="Textures\2k_uranus.jpg" alt="uranus texture">
+			<img id="texture-neptune" src="Textures\2k_neptune.jpg" alt="neptune texture">
+		</a-assets>
 		<!-- Template Container -->
 		<a-entity id="template-container" template="src:Scenes/Solar-System.html" position="0 0 0"></a-entity>
 		<!-- Camera -->
@@ -37,10 +48,11 @@
 		    			rotation="-14.8969 -12.8342 0"></a-entity>
 		</a-entity>
         <!-- Light Source-->
-		<a-entity light="color:#BBB;type:ambient"></a-entity>
-        <a-entity light="intensity:0.35;type:ambient" position="0 1 1"></a-entity>
+		<a-entity light="color: #BBB; type: point"></a-entity>
+		<a-entity light="intensity: 0.1;color: #BBB; type: ambient"></a-entity>
+		<!-- <a-entity light="intensity: 0.6; castShadow: true" position="-0.5 1 1"></a-entity> -->
         <!-- Mouse Cursor -->
-		<a-entity cursor="rayOrigin: mouse;"></a-entity>
+		<!-- <a-entity cursor="rayOrigin: mouse;"></a-entity> -->
 	</a-scene>
 </body>
 </html>
