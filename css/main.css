@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Fira Sans', sans-serif;
 }
-
 .github-corner {
     display: block;
     position: absolute;
@@ -30,6 +28,7 @@ body {
 }
 
 p {
+    font-family: 'Fira Sans', sans-serif;
     margin-bottom: 15px;
 }
 p:last-child {
