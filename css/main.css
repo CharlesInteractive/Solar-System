@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.github-corner {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+
+.instruction-set {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    color: white;
+    text-align: center;
+    background: rgba(64, 64, 64, .75);
+    padding: 15px;
+    border-top: 1px solid white;
+}
+
+p {
+    margin-bottom: 15px;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    color: white;
+}
